@@ -15,8 +15,13 @@ library(sushicat)
 ```{r}
 ggplot(data = penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   geom_point(aes(color = species)) + 
-  theme_blue()
+  theme_blue() + 
+  theme(panel.grid.major = element_line(color = "yellow"),
+        panel.grid.minor = element_line(color = "lightyellow", size = 0.1))
 
 
 ```
+
+
+
 
